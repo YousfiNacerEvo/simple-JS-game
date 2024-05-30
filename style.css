@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0685FF;
+
+}
+main{
+    height: 60%;
+    width: 60%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+main .content{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid gray;
+
+}
+main .content img{
+    height: 40px;
+    object-fit: cover;
+}
+
+main .content .ball{
+    position: relative;
+    border-radius: 50%;
+    background-color: black;
+    padding: 7px;
+    
+}
+.button-section{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.button-section button{
+
+    padding: 10px;
+    background-color: white;
+    border: none;
+    color: #0685FF;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.saute{
+    animation-name: saute;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes saute {
+    
+    50%{transform:translateY(-25px);}
+    100%{transform: translateY(0px);}
+    
+}
+
+.bouge{
+    animation-name: bouge;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes bouge {
+   
+    100%{
+      transform: translateX(-700px);
+        
+    }
+    
+}
+
+
